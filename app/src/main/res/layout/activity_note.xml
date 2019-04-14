@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".NoteActivity">
+
+    <EditText
+        android:id="@+id/note_edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="8"
+        android:background="#fff"
+        android:focusable="false"
+        android:hint="Enter Title"
+        android:gravity="left"
+        android:padding="2dp"
+        android:textColor="#000"
+        android:textSize="23sp" />
+
+    <com.example.notesapp.LinedEditText
+        android:background="#fff"
+        android:id="@+id/note_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:hint="Enter Title"
+        android:imeOptions="flagNoExtractUi"
+        android:padding="5dp"
+        android:textColor="#000"
+        android:textSize="23sp"
+        android:focusable="false"/>
+
+</LinearLayout>
